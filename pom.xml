@@ -173,13 +173,13 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>target/resources/static</outputDirectory>
+							<outputDirectory>target/</outputDirectory>
 							<resources>
 								<resource>
-									<directory>src/main/webapp</directory>
-									<excludes>
-										<exclude>**/*.xml</exclude>
-									</excludes>
+									<directory>src/main/resources</directory>
+									<includes>
+										<include>**/*.sh</include>
+									</includes>
 								</resource>
 							</resources>
 						</configuration>

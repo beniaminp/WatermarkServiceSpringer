@@ -12,13 +12,19 @@ import com.padana.domain.Document;
 import com.padana.domain.Watermark;
 import com.padana.util.Constants;
 
+/*
+ * class to check for unwatermarked documents every 20 seconds
+ * if there are unwatermarked documents found, this service will watermark all
+ * 
+ * */
+
 @Component
 public class WatermarkService{
 	@Autowired
 	GenericService genericService;
 	
 	private static final Logger log = LoggerFactory.getLogger(WatermarkService.class);
-
+	
     @Scheduled(fixedDelay = 20000)
     public void setWatermark() {
     	log.info("Search for documents to set watermark");

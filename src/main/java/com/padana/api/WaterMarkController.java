@@ -31,7 +31,10 @@ public class WaterMarkController {
 	public String index() {
 		return "Greetings from Spring Boot!";
 	}
-
+	/*
+	 * method used to check document status by tile and author
+	 * 
+	 * */
 	@RequestMapping(value = "checkDocument/{title}/{author}", method = RequestMethod.GET, produces = "application/json")
 	@ResponseBody
 	public String checkDocument(@PathVariable String title, @PathVariable String author) {
@@ -56,7 +59,11 @@ public class WaterMarkController {
 		return Constants.DOCUMENT_NOT_EXISTENT;
 
 	}
-
+	
+	/*
+	 * method used to check document status by ticket, received on checkDocument by title/author
+	 * 
+	 * */
 	@RequestMapping(value = "checkByTicket/{ticket}", method = RequestMethod.GET, produces = "application/json")
 	@ResponseBody
 	public String checkByTicket(@PathVariable String ticket) {
@@ -90,7 +97,11 @@ public class WaterMarkController {
 		}
 		return Constants.DOCUMENT_NOT_EXISTENT;
 	}
-
+	
+	/*
+	 * method used to add document
+	 * 
+	 * */
 	@RequestMapping(value = "addDocuments", method = RequestMethod.POST)
 	public ResponseEntity<Void> addDocument(@RequestBody Document doc) {
 		if (genericService.getFiltered(Document.class, "docTitle", doc.getDocTitle(), "docAuthor",
@@ -105,7 +116,11 @@ public class WaterMarkController {
 
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
-
+	
+	/*
+	 * method used to add bulk documents
+	 * 
+	 * */
 	@RequestMapping(value = "addBulkDocuments", method = RequestMethod.POST)
 	public ResponseEntity<Void> addBulkDocuments(@RequestBody List<Document> docs) {
 		for (Document doc : docs) {

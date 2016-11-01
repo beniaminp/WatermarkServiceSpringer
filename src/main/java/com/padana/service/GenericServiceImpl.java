@@ -9,13 +9,18 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.padana.dao.GenericDao;
 
+/*
+ * class containing generic methods for CRUD operations
+ * 
+ * */
+
 @Service("genericService")
 @Transactional
 public class GenericServiceImpl<T> implements GenericService<T> {
 
 	@Autowired
 	private GenericDao genericDao;
-
+	
 	public <T> T get(final Class<T> clazz, final Long obj) {
 		return (T) genericDao.get(clazz, obj);
 	}
