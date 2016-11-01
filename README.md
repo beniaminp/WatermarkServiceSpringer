@@ -8,6 +8,7 @@ I tried to use only generics, to be possible to add new functionalities in the f
 can be added without having to create new services for every entity).</br>
 I know that probably is not the best approach to the problem.</br>
 This is what I understood from the requirements and I hope that I understood correct :).</br>
+To see all methods from the service, go to 'yourhost:yourport/application.wadl'</br>
 
 Prerequirements:
 
