@@ -1,13 +1,13 @@
 This is the WatermarkService for SpringerNature test.
 
-This project is build using SpringBoot to run an embedded tomcat container.
-I also used spring-core, spring-context, spring-tx...(can be found in pom.xml) with hibernate for ORM.
+This project is build using SpringBoot to run an embedded tomcat container.</br>
+I also used spring-core, spring-context, spring-tx...(can be found in pom.xml) with hibernate for ORM.</br>
 I used a SqLite database. I choose this option over an in memory database because I want to simulate a real scenario (In a real
-scenario, is possible to add data to the service database from and external service, or to connect watermark service to an external documents database).
+scenario, is possible to add data to the service database from and external service, or to connect watermark service to an external documents database).</br>
 I tried to use only generics, to be possible to add new functionalities in the future without the need to change a lot from the application structure (new tables and entities
-can be added without having to create new services for every entity).
-I know that probably is not the best approach to the problem.
-This is what I understood from the requirements and I hope that I understood correct :).
+can be added without having to create new services for every entity).</br>
+I know that probably is not the best approach to the problem.</br>
+This is what I understood from the requirements and I hope that I understood correct :).</br>
 
 Prerequirements:
 
