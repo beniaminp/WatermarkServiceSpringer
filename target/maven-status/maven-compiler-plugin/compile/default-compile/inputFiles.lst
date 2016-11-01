@@ -4,6 +4,7 @@
 /home/dragospantiru/pers/WatermarkService/src/main/java/com/padana/service/GenericService.java
 /home/dragospantiru/pers/WatermarkService/src/main/java/com/padana/dao/HibernateDao.java
 /home/dragospantiru/pers/WatermarkService/src/main/java/com/padana/dao/GenericDao.java
+/home/dragospantiru/pers/WatermarkService/src/main/java/com/padana/api/WadlController.java
 /home/dragospantiru/pers/WatermarkService/src/main/java/com/padana/domain/Watermark.java
 /home/dragospantiru/pers/WatermarkService/src/main/java/com/padana/Main.java
 /home/dragospantiru/pers/WatermarkService/src/main/java/com/padana/api/WaterMarkController.java

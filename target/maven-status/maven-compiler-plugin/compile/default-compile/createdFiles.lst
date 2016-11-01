@@ -11,3 +11,4 @@ com/padana/service/GenericServiceImpl.class
 com/padana/service/WatermarkService.class
 com/padana/dao/HibernateDao.class
 com/padana/util/Constants.class
+com/padana/api/WadlController.class
