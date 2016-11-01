@@ -1,1 +1,0 @@
-pkill -F watermark.pid

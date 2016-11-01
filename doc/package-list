@@ -1,1 +1,8 @@
+com.padana
+com.padana.api
+com.padana.config
+com.padana.dao
+com.padana.domain
 com.padana.service
+com.padana.util
+org.hibernate.dialect
